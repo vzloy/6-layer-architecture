@@ -4,4 +4,4 @@ This formulation delivers two powerful compositional guarantees. The Fubini theo
 
 The architecture aligns directly with FAIR principles: ports provide standardised interfaces (Interoperability, Accessibility); categorical semantics offer unambiguous per-step metadata (Findability); independently replaceable adapters with full provenance support Reusability. These strengths are particularly valuable in healthcare and drug discovery, where traceable, reproducible processing underpins confident decision-making.
 
-We demonstrate the approach in Haskell/Polysemy
+We demonstrate the approach in Haskell/Polysemy.
