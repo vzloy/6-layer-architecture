@@ -1,0 +1,7 @@
+We present a six-layer categorical clean architecture that brings principled compositionality to scientific image analysis. Extending the classical ports-and-adapters pattern with category theory, the architecture decomposes pipelines into six independently replaceable layers: Domain, Use Case, Category Theory Port, Math Theory Adapter, Computation Port, and Computation Adapter. Each layer is a category; inter-layer boundaries are functors; interpreters are natural transformations.
+
+This formulation delivers two powerful compositional guarantees. The Fubini theorem for coends ensures that mathematical theories and computation backends can be swapped independently, giving researchers freedom to explore alternative models without disrupting existing pipelines. Operations from different mathematical branches — PDE-based smoothing and lattice-theoretic morphology, for instance — compose naturally at shared categorical ports, opening the door to rigorously typed multi-theory pipelines.
+
+The architecture aligns directly with FAIR principles: ports provide standardised interfaces (Interoperability, Accessibility); categorical semantics offer unambiguous per-step metadata (Findability); independently replaceable adapters with full provenance support Reusability. These strengths are particularly valuable in healthcare and drug discovery, where traceable, reproducible processing underpins confident decision-making.
+
+We demonstrate the approach in Haskell/Polysemy
